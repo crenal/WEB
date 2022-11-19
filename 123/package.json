@@ -1,5 +1,5 @@
 {
-  "name": "vue2",
+  "name": "123",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -7,8 +7,8 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
-    "swiper": "^8.1.6",
-    "vue": "^3.2.38"
+    "vue": "^3.2.38",
+    "vue-router": "^4.1.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",

@@ -4,24 +4,20 @@
     <p>{{message}}</p>
     <button @click="message='更新数据'">点击更新</button>
     <h3>swiper组件</h3>
-    <Swiper :modules="modules" :pagination="{ clickable : true }">
-            <SwiperSlide>
-                <img src="../assets/logo.png" alt="">
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src="../assets/logo.png" alt="">
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src="../assets/logo.png" alt="">
-            </SwiperSlide>
-        </Swiper>
+     <div class="hello">
+    <swiper class="mySwiper">
+      <swiper-slide>Slide 1</swiper-slide>
+      <swiper-slide>Slide 2</swiper-slide>
+      <swiper-slide>Slide 3</swiper-slide>
+    </swiper>
+  </div>
 </div>
 </template>
 
 
 <script>
-import {Swiper , SwiperSlide } from 'vue-awesome-swiper';
-import 'swiper/swiper-bundle.css'
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
 
 export default {
     name:"component2",

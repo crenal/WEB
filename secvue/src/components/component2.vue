@@ -7,13 +7,13 @@
     <div class="hello">
     <swiper class="mySwiper" :modules="modules" :pagination="{ clickable: true }">
       <swiper-slide>
-        <img src="../assets/logo.svg" alt="">
+        <img src="../assets/1.jpeg" alt="">
       </swiper-slide>
       <swiper-slide>
-        <img src="../assets/logo.svg" alt="">
+        <img src="../assets/1.jpeg" alt="">
       </swiper-slide>
       <swiper-slide>
-        <img src="../assets/logo.svg" alt="">
+        <img src="../assets/1.jpeg" alt="">
       </swiper-slide>
     </swiper>
   </div>
@@ -33,28 +33,6 @@ export default {
         Swiper,
         SwiperSlide
     },
-    mounted() {
-       new Swiper('.swiper', {
-          direction: 'vertical', // 垂直切换选项
-          loop: true, // 循环模式选项
-            
-          // 如果需要分页器
-          pagination: {
-             el: '.swiper-pagination'
-          },
- 
-          // 如果需要前进后退按钮
-          navigation: {
-             nextEl: '.swiper-button-next',
-             pervEl: '.swiper-button-prev'   
-          },
- 
-          // 如果需要滚动条
-          scrollbar: {
-              el: '.swiper-scrollbar'
-          }
-        })
-      },
     data(){
         return{
             message:"",
@@ -94,5 +72,8 @@ export default {
 
 
 <style scoped>
+image{
+    width:100%,
+}
 /*scoped表示只作用于当前组件*/
 </style>

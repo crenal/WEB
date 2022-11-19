@@ -10,5 +10,13 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  devServer: {
+    proxy: {
+      '/api': {
+        target: '<url>',//将跨域的地址放进来
+        changeOrigin: true
+      }
+    }
+}
 })

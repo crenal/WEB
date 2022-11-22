@@ -65,8 +65,11 @@ export default {
     },
     unmounted(){
         console.log("unmounted:组件卸载完成")
-    }
+    },
+    methods:{
 
+    },
+    
 }
 </script>
 
